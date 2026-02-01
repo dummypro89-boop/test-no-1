@@ -71,6 +71,12 @@ article {
     padding: 20px;
 }
 
+article a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 article h2 {
     font-size: 1.2em;
     margin-bottom: 10px;
