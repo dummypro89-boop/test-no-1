@@ -1,57 +1,65 @@
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: #f0f0f0;
-  font-family: sans-serif;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.container {
-  text-align: center;
-  background-color: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
 }
 
-h1 {
-  margin-bottom: 1.5rem;
-  color: #333;
+nav {
+    background-color: #333;
+    padding: 10px;
 }
 
-.lotto-numbers {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 1.5rem;
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-.lotto-number {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #4CAF50;
-  color: white;
-  font-size: 1.5rem;
-  font-weight: bold;
+nav li {
+    display: inline-block;
+    margin-right: 20px;
 }
 
-.generate-button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #008CBA;
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
+nav a {
+    color: #fff;
+    text-decoration: none;
 }
 
-.generate-button:hover {
-  background-color: #005f7a;
+main {
+    padding: 20px;
+}
+
+#news-articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+article {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+article h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+article p {
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
 }
